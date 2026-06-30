@@ -38,29 +38,18 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative lg:px-8">
-      <div className="relative overflow-hidden rounded-none lg:rounded-[20px] min-h-screen">
+    <section className="relative">
+      <div className="relative overflow-hidden min-h-screen">
 
         {/* Background Slider */}
         <AnimatePresence mode="wait">
           <motion.div
             key={current}
             className="absolute inset-0"
-            initial={{
-              opacity: 0,
-              scale: 1.12,
-            }}
-            animate={{
-              opacity: 1,
-              scale: 1,
-            }}
-            exit={{
-              opacity: 0,
-            }}
-            transition={{
-              duration: 1.2,
-              ease: "easeOut",
-            }}
+            initial={{ opacity: 0, scale: 1.12 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
           >
             <Image
               src={slides[current]}
@@ -77,109 +66,62 @@ export default function Hero() {
 
         {/* Content */}
         <div className="relative z-10 flex min-h-screen items-center">
-          <div className="mx-auto w-full max-w-7xl px-6 sm:px-8">
+          <div className="mx-auto w-full max-w-[1600px] px-6 sm:px-10 lg:px-16">
 
             <motion.div
               key={current}
-              initial={{
-                opacity: 0,
-                y: 40,
-              }}
-              animate={{
-                opacity: 1,
-                y: 0,
-              }}
-              exit={{
-                opacity: 0,
-                y: -30,
-              }}
-              transition={{
-                duration: 0.8,
-              }}
-              className="max-w-5xl"
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -30 }}
+              transition={{ duration: 0.8 }}
+              className="max-w-none lg:max-w-[90%] xl:max-w-[85%]"
             >
               {/* Eyebrow */}
               <motion.div
-                initial={{
-                  opacity: 0,
-                  x: -20,
-                }}
-                animate={{
-                  opacity: 1,
-                  x: 0,
-                }}
-                transition={{
-                  delay: 0.2,
-                }}
-                className="mb-6 flex items-center gap-3 text-primary"
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.2 }}
+                className="mb-4 flex items-center gap-3 text-primary"
               >
-                <div className="h-[2px] w-8 bg-[#266DB5]" />
-
-                <span className="text-sm text-[#266DB5] font-semibold uppercase tracking-[0.25em]">
+                <div className="h-[2px] w-50 bg-[#1976D2]" />
+                {/* <span className="text-sm text-[#266DB5] font-semibold uppercase tracking-[0.25em]">
                   Trusted Healthcare Partner
-                </span>
+                </span> */}
               </motion.div>
 
               {/* Heading */}
               <motion.h1
-                initial={{
-                  opacity: 0,
-                  y: 20,
-                }}
-                animate={{
-                  opacity: 1,
-                  y: 0,
-                }}
-                transition={{
-                  delay: 0.3,
-                }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3 }}
                 className="font-[var(--font-heading)] text-3xl font-bold leading-tight tracking-tight text-white sm:text-4xl lg:text-5xl xl:text-6xl"
               >
-                Advancing
-                <span className="block text-primary">
-                  Healthcare
-                </span>
+                Advancing <span className="text-primary">Healthcare </span><br />
                 Across Africa
               </motion.h1>
 
               {/* Tagline */}
               <motion.p
-                initial={{
-                  opacity: 0,
-                  y: 20,
-                }}
-                animate={{
-                  opacity: 1,
-                  y: 0,
-                }}
-                transition={{
-                  delay: 0.45,
-                }}
-                className="mt-6 max-w-xl text-base leading-8 text-white/80 sm:text-lg"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.45 }}
+                className="mt-6 max-w-3xl text-base leading-8 text-white/80 sm:text-lg lg:text-xl"
               >
-                Reliable pharmaceuticals and healthcare
-                solutions that empower hospitals, clinics,
-                and healthcare providers across Africa.
+                Reliable pharmaceuticals and healthcare solutions that
+                empower hospitals, clinics, and healthcare providers
+                across Africa.
               </motion.p>
 
               {/* Buttons */}
               <motion.div
-                initial={{
-                  opacity: 0,
-                  y: 20,
-                }}
-                animate={{
-                  opacity: 1,
-                  y: 0,
-                }}
-                transition={{
-                  delay: 0.6,
-                }}
-                className="mt-10 flex flex-col gap-4 sm:flex-row"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.6 }}
+                className="mt-6 flex flex-col gap-4 sm:flex-row sm:flex-wrap"
               >
                 <Link
                   href="/products"
-                  className="w-full rounded-xl bg-primary px-8 py-4 text-center font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-primary/30 sm:w-auto"
+                  className="w-full rounded-xl bg-[#1976D2] px-8 py-4 text-center font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-primary/30 sm:w-auto"
                 >
                   Explore Products
                 </Link>
@@ -228,28 +170,17 @@ export default function Hero() {
 
         {/* Scroll Indicator */}
         <motion.div
-          animate={{
-            y: [0, 10, 0],
-          }}
-          transition={{
-            repeat: Infinity,
-            duration: 2,
-          }}
-          className="absolute bottom-8 right-8 hidden lg:flex flex-col items-center gap-2 text-white/70"
+          animate={{ y: [0, 10, 0] }}
+          transition={{ repeat: Infinity, duration: 2 }}
+          className="absolute bottom-28 right-8 hidden lg:flex flex-col items-center gap-2 text-white/70"
         >
           <span className="rotate-90 text-xs uppercase tracking-[0.3em]">
             Scroll
           </span>
-
           <div className="h-12 w-[2px] bg-white/30 overflow-hidden rounded-full">
             <motion.div
-              animate={{
-                y: [-40, 40],
-              }}
-              transition={{
-                repeat: Infinity,
-                duration: 2,
-              }}
+              animate={{ y: [-40, 40] }}
+              transition={{ repeat: Infinity, duration: 2 }}
               className="h-6 w-full bg-primary"
             />
           </div>

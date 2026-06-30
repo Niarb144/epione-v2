@@ -18,47 +18,47 @@
 
   /* ── Colour palette ──────────────────────────────────────────────────── */
 
-  /* Forest green — trust, nature, primary brand colour */
-  --color-forest-50:  #EEF4F2;
-  --color-forest-100: #D4E6E1;
-  --color-forest-200: #A9CDC3;
-  --color-forest-300: #7EB4A5;
-  --color-forest-400: #539B87;
-  --color-forest-500: #4A7C6F;
-  --color-forest-600: #2E5E52;
-  --color-forest-700: #1A3C34;   /* PRIMARY */
-  --color-forest-800: #122921;
-  --color-forest-900: #0A1510;
+  /* Blue — trust, clinical confidence, primary brand colour */
+  --color-forest-50:  #EAF4FC;
+  --color-forest-100: #D2E8FA;
+  --color-forest-200: #A5D1F5;
+  --color-forest-300: #4FC3F7;   /* Sky Blue */
+  --color-forest-400: #2E9AE0;
+  --color-forest-500: #1976D2;   /* PRIMARY — Primary Blue */
+  --color-forest-600: #0F66BD;
+  --color-forest-700: #0056B3;   /* Deep Blue */
+  --color-forest-800: #00408A;
+  --color-forest-900: #002B5C;
 
-  /* Warm gold — premium, Pan-African accent */
-  --color-gold-50:  #FDF8EC;
-  --color-gold-100: #F9EFD0;
-  --color-gold-200: #F2DEA1;
-  --color-gold-300: #ECCE72;
-  --color-gold-400: #E5BD43;
-  --color-gold-500: #C9A84C;     /* PRIMARY ACCENT */
-  --color-gold-600: #A68A3A;
-  --color-gold-700: #836C2E;
+  /* Green — vitality, wellness accent */
+  --color-gold-50:  #F1FAEA;
+  --color-gold-100: #E0F4D0;
+  --color-gold-200: #C2E8A6;
+  --color-gold-300: #9FDB78;
+  --color-gold-400: #7AC943;     /* PRIMARY ACCENT — Fresh Green */
+  --color-gold-500: #4CAF50;     /* Dark Green */
+  --color-gold-600: #3D8C40;
+  --color-gold-700: #2E6930;
 
-  /* Parchment — warm off-white page background */
-  --color-parchment-50:  #FDFCF9;
-  --color-parchment-100: #F7F4EE; /* page bg */
-  --color-parchment-200: #EDE8DC;
-  --color-parchment-300: #D9D1C3;
-  --color-parchment-400: #C4B9A8;
-  --color-parchment-500: #AFA18D;
+  /* Background — clean clinical whites/greys */
+  --color-parchment-50:  #FFFFFF;
+  --color-parchment-100: #F8FCFD; /* page bg — Background White */
+  --color-parchment-200: #EDF4F7; /* Light Grey */
+  --color-parchment-300: #DCE6EA;
+  --color-parchment-400: #C2D1D7;
+  --color-parchment-500: #A8B9C0;
 
-  /* Charcoal — text scale */
-  --color-charcoal-50:  #F3F3F3;
-  --color-charcoal-100: #E7E7E7;
-  --color-charcoal-200: #CFCFCF;
-  --color-charcoal-300: #B7B7B7;
-  --color-charcoal-400: #9F9F9F;
-  --color-charcoal-500: #878787;
-  --color-charcoal-600: #6F6F6F;
-  --color-charcoal-700: #575757;
-  --color-charcoal-800: #3F3F3F;
-  --color-charcoal-900: #1C1C1C; /* PRIMARY TEXT */
+  /* Dark Text — text scale */
+  --color-charcoal-50:  #EFF2F4;
+  --color-charcoal-100: #DEE3E7;
+  --color-charcoal-200: #BDC8CE;
+  --color-charcoal-300: #9CAEB6;
+  --color-charcoal-400: #7B939D;
+  --color-charcoal-500: #5C7884;
+  --color-charcoal-600: #475F6C;
+  --color-charcoal-700: #374C57;
+  --color-charcoal-800: #2C3D47;
+  --color-charcoal-900: #253746; /* PRIMARY TEXT — Dark Text */
 
   /* ── Typography ──────────────────────────────────────────────────────── */
   /* Plus Jakarta Sans: geometric, confident — headlines & display text    */
@@ -76,10 +76,10 @@
   --radius-5xl: 2.5rem;
 
   /* ── Box shadows ─────────────────────────────────────────────────────── */
-  --shadow-card:       0 2px 24px 0 rgb(26 60 52 / 0.08);
-  --shadow-card-hover: 0 8px 40px 0 rgb(26 60 52 / 0.16);
-  --shadow-gold:       0 4px 24px 0 rgb(201 168 76 / 0.30);
-  --shadow-navbar:     0 1px 0   0 rgb(26 60 52 / 0.08);
+  --shadow-card:       0 2px 24px 0 rgb(0 86 179 / 0.08);
+  --shadow-card-hover: 0 8px 40px 0 rgb(0 86 179 / 0.16);
+  --shadow-gold:       0 4px 24px 0 rgb(122 201 67 / 0.30);
+  --shadow-navbar:     0 1px 0   0 rgb(0 86 179 / 0.08);
 
   /* ── Custom keyframe animations ──────────────────────────────────────── */
   --animate-fade-up:           fadeUp 0.6s ease-out forwards;
@@ -149,7 +149,7 @@
   /* Text selection */
   ::selection {
     background-color: var(--color-forest-700);
-    color: var(--color-gold-500);
+    color: var(--color-gold-400);
   }
 
   /* Display headings — Plus Jakarta Sans, heavy weight for impact */
@@ -243,11 +243,11 @@
   }
 
   .btn-gold {
-    background-color: var(--color-gold-500);
-    color: var(--color-forest-700);
+    background-color: var(--color-gold-400);
+    color: var(--color-forest-900);
   }
   .btn-gold:hover {
-    background-color: var(--color-gold-400);
+    background-color: var(--color-gold-500);
     box-shadow: var(--shadow-gold);
     transform: translateY(-1px);
   }
@@ -268,8 +268,8 @@
     left: 1rem;
     z-index: 9999;
     padding: 0.5rem 1rem;
-    background: var(--color-gold-500);
-    color: var(--color-forest-700);
+    background: var(--color-gold-400);
+    color: var(--color-forest-900);
     font-size: 0.875rem;
     font-weight: 700;
     border-radius: 0.5rem;
@@ -297,7 +297,7 @@
     background: linear-gradient(
       to right,
       transparent,
-      var(--color-gold-500),
+      var(--color-gold-400),
       transparent
     );
     opacity: 0.5;
@@ -315,7 +315,7 @@
     background: linear-gradient(
       to right,
       var(--color-forest-700),
-      var(--color-forest-500)
+      var(--color-forest-300)
     );
     -webkit-background-clip: text;
     background-clip: text;
@@ -325,8 +325,8 @@
   .text-gradient-gold {
     background: linear-gradient(
       to right,
-      var(--color-gold-600),
-      var(--color-gold-400)
+      var(--color-gold-500),
+      var(--color-gold-300)
     );
     -webkit-background-clip: text;
     background-clip: text;

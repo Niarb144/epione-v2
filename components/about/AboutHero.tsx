@@ -167,7 +167,7 @@ export function AboutHero() {
             variants={floatCardVariants}
             className="absolute -top-6 -left-4 hidden rounded-2xl border border-white/40 bg-white/80 px-5 py-4 shadow-xl backdrop-blur-md sm:block lg:-left-8"
           >
-            <p className="font-display text-2xl font-bold text-forest">15+</p>
+            <p className="font-display text-2xl font-bold text-forest">12+</p>
             <p className="text-xs font-medium text-charcoal/60">
               Years Experience
             </p>

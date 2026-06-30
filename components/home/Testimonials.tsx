@@ -21,7 +21,7 @@ const testimonials: Testimonial[] = [
     name: "Amara Okafor",
     role: "Head of Procurement",
     organisation: "Lakeview Clinics Group",
-    avatar: "/images/avatar-placeholder-1.webp",
+    avatar: "/images/profile1.jpg",
   },
   {
     quote:
@@ -29,7 +29,7 @@ const testimonials: Testimonial[] = [
     name: "Daniel Mwangi",
     role: "Pharmacy Operations Manager",
     organisation: "Rift Valley Medical Centre",
-    avatar: "/images/avatar-placeholder-2.webp",
+    avatar: "/images/profile2.jpg",
   },
   {
     quote:
@@ -37,7 +37,7 @@ const testimonials: Testimonial[] = [
     name: "Grace Achieng",
     role: "Regional Supply Chain Director",
     organisation: "Pan-Africa Pharma Network",
-    avatar: "/images/avatar-placeholder-3.webp",
+    avatar: "/images/profile3.jpg",
   },
 ];
 

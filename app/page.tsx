@@ -1,4 +1,5 @@
 import Hero from "@/components/home/Hero";
+import { PartnerLogos } from "@/components/about/PartnerLogos";
 import PartnerStrip from "@/components/home/PartnerStrip";
 import About from "@/components/home/AnimatedStats";
 import ProductCategories from "@/components/home/ProductCategories";
@@ -12,7 +13,7 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <PartnerStrip />
+      <PartnerLogos />
       <About />
       <ProductCategories />
       <WhyPartner />

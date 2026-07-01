@@ -11,6 +11,7 @@ import { QualityCompliance } from "@/components/about/QualityCompliance";
 import { PartnerLogos } from "@/components/about/PartnerLogos";
 import { CorporateResponsibility } from "@/components/about/CorporateResponsibility";
 import { AboutCTA } from "@/components/about/AboutCTA";
+import CallToAction from "@/components/layout/CallToAction";
 
 export const metadata: Metadata = {
   title: "About Epione Health | Trusted Pharmaceutical Distribution Partner",
@@ -66,7 +67,14 @@ export default function AboutPage() {
         <QualityCompliance />
         <PartnerLogos />
         <CorporateResponsibility />
-        <AboutCTA />
+        {/* <AboutCTA /> */}
+        <CallToAction
+          eyebrow="Get started"
+          title="Ready to simplify your pharmaceutical supply chain?"
+          description="Talk to our team about catalogue access, pricing, and onboarding as a wholesale partner."
+          primaryAction={{ label: "Contact us", href: "/contact" }}
+          secondaryAction={{ label: "View products", href: "/products" }}
+        />
       </main>
     </>
   );

@@ -54,7 +54,7 @@ const NAV_ITEMS: NavItem[] = [
     ],
   },
   { label: "SDG 3",   href: "#tabs"    },
-  { label: "Contact", href: "#contact" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const SOCIALS = [

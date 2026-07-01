@@ -60,6 +60,21 @@
   --color-charcoal-800: #2C3D47;
   --color-charcoal-900: #253746; /* PRIMARY TEXT — Dark Text */
 
+  --color-primary-blue: #1976D2;
+  --color-sky-blue: #4FC3F7;
+  --color-deep-blue: #0056B3;
+  --color-fresh-green: #7AC943;
+  --color-dark-green: #4CAF50;
+  --color-bg-white: #F8FCFD;
+  --color-light-grey: #EDF4F7;
+  --color-dark-text: #253746;
+ 
+  --font-heading: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-body: "Inter", sans-serif;
+ 
+  --radius-card: 1.5rem;
+  --radius-card-lg: 1.75rem;
+
   /* ── Typography ──────────────────────────────────────────────────────── */
   /* Plus Jakarta Sans: geometric, confident — headlines & display text    */
   --font-display: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
@@ -301,6 +316,16 @@
       transparent
     );
     opacity: 0.5;
+  }
+
+   .epione-gradient-hero {
+    background: linear-gradient(135deg, #EAF6FF 0%, #F8FCFD 55%, #EDF4F7 100%);
+  }
+  .epione-gradient-cta {
+    background: linear-gradient(120deg, var(--color-primary-blue) 0%, var(--color-dark-green) 100%);
+  }
+  .epione-card {
+    @apply bg-white rounded-[var(--radius-card)] shadow-[0_4px_24px_rgba(37,55,70,0.06)] border border-[var(--color-light-grey)];
   }
 }
 

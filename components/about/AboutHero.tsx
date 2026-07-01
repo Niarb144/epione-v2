@@ -50,7 +50,7 @@ const floatCardVariants: Variants = {
 
 export function AboutHero() {
   return (
-    <section className="relative overflow-hidden bg-parchment pt-32 pb-24 lg:pt-40 lg:pb-32">
+    <section className="relative overflow-hidden bg-parchment pt-32 pb-24 lg:pt-20 lg:pb-32">
       {/* Decorative gradient + floating circles inspired by the logo */}
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute -top-32 right-[-10%] h-[520px] w-[520px] rounded-full bg-gradient-to-br from-forest/10 via-gold/10 to-transparent blur-3xl" />
